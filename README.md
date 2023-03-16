@@ -176,8 +176,8 @@ when pressing the brightness keys.
 >
 > The only exception would be the Spacer widget.
 
-Therefore if you didn't want to install the Soundctl and
-Lightctl widgets, here's what you would do:
+Therefore if you didn't want the Soundctl and Lightctl
+widgets, here's what you would do:
 
     git clone https://github.com/cherrynoize/ctrl
     cd ctrl
