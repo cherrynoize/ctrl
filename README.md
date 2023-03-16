@@ -146,23 +146,23 @@ these tools are any use.
 This is a sample config for the `awful` keybindings to
 get you started.
 
-   -- Soundctl.
-   awful.key({}, "XF86AudioRaiseVolume", soundctl.up),
-   awful.key({}, "XF86AudioLowerVolume", soundctl.down),
-   awful.key({}, "XF86AudioMute", soundctl.togglemute),
-   awful.key({modkey, "Control", "Shift"}, "q", soundctl.max),
-   awful.key({modkey, "Control", "Shift"}, "w", soundctl.half),
-   awful.key({modkey, "Control", "Shift"}, "e", soundctl.min),
-   awful.key({modkey, "Control", "Shift"}, "m", soundctl.togglemute),
+    -- Soundctl.
+    awful.key({}, "XF86AudioRaiseVolume", soundctl.up),
+    awful.key({}, "XF86AudioLowerVolume", soundctl.down),
+    awful.key({}, "XF86AudioMute", soundctl.togglemute),
+    awful.key({modkey, "Control", "Shift"}, "q", soundctl.max),
+    awful.key({modkey, "Control", "Shift"}, "w", soundctl.half),
+    awful.key({modkey, "Control", "Shift"}, "e", soundctl.min),
+    awful.key({modkey, "Control", "Shift"}, "m", soundctl.togglemute),
 
-   -- Lightctl.
-   awful.key({}, "XF86MonBrightnessDown", lightctl.logdown),
-   awful.key({}, "XF86MonBrightnessUp", lightctl.logup),
-   awful.key({modkey}, "XF86MonBrightnessUp", lightctl.all),
-   awful.key({modkey}, "XF86MonBrightnessDown", lightctl.min),
-   awful.key({modkey, "Control", "Shift"}, "a", lightctl.all),
-   awful.key({modkey, "Control", "Shift"}, "s", lightctl.half),
-   awful.key({modkey, "Control", "Shift"}, "d", lightctl.min)
+    -- Lightctl.
+    awful.key({}, "XF86MonBrightnessDown", lightctl.logdown),
+    awful.key({}, "XF86MonBrightnessUp", lightctl.logup),
+    awful.key({modkey}, "XF86MonBrightnessUp", lightctl.all),
+    awful.key({modkey}, "XF86MonBrightnessDown", lightctl.min),
+    awful.key({modkey, "Control", "Shift"}, "a", lightctl.all),
+    awful.key({modkey, "Control", "Shift"}, "s", lightctl.half),
+    awful.key({modkey, "Control", "Shift"}, "d", lightctl.min)
 
 Other functions for lightctl would include for instance
 `up` and `down`, which you could substitute for `logup`
