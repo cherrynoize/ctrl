@@ -183,11 +183,11 @@ here's what you would do:
     cd ctrl
     rm soundctl.lua lightctl.lua
 
-Or you could easily just keep them lying around, in case
-you change your mind. I tried to keep the code down to
-a minimum weight for the whole project, so it's small,
-tidy and easily rearrangeable, so you coul try and use
-it to make your own widgets.
+Or you could easily just have them lying around, if you
+ever you change your mind. I tried to keep the code down
+to a minimum weight for the whole project, so it's small,
+tidy and easily rearrangeable, in case you want to try
+and use it to make your own widgets.
 
 ## Bugs
 
