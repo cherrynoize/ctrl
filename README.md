@@ -46,6 +46,9 @@ cleaner fashion someday. Don't hold your breath though!
 
 > Widget customization is handled in the `config.lua` file.
 > 
+> At the bare minimum you need to copy the
+> `config.lua.def` into `config.lua` and restart awesome.
+> 
 > Configuration is shared among all modules, though there
 > are sections specific to each.
 
