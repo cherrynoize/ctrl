@@ -176,18 +176,18 @@ when pressing the brightness keys.
 >
 > The only exception would be the Spacer widget.
 
-Therefore if you didn't want the Soundctl and Lightctl
-widgets, here's what you would do:
+Therefore if you didn't want Soundctl and Lightctl,
+here's what you would do:
 
     git clone https://github.com/cherrynoize/ctrl
     cd ctrl
     rm soundctl.lua lightctl.lua
 
-But you could easily just keep them lying around, in case
+Or you could easily just keep them lying around, in case
 you change your mind. I tried to keep the code down to
 a minimum weight for the whole project, so it's small,
-tidy and easily rearrangeable, in case you wanted to
-use it to make your own widgets.
+tidy and easily rearrangeable, so you coul try and use
+it to make your own widgets.
 
 ## Bugs
 
