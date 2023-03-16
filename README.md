@@ -44,10 +44,10 @@ cleaner fashion someday. Don't hold your breath though!
 
 ### Customization
 
-Widget customization is handled in the `config.lua` file.
-
-Configuration is shared among all modules, though there
-are sections specific to each.
+> Widget customization is handled in the `config.lua` file.
+> 
+> Configuration is shared among all modules, though there
+> are sections specific to each.
 
 I tried to keep the file well commented so you can
 hopefully work it out on the spot and there'll be no
@@ -176,9 +176,8 @@ when pressing the brightness keys.
 >
 > The only exception would be the Spacer widget.
 
-So, say you wanted to install the Battctl widget alone.
-
-Here's what you would do:
+Therefore if you wanted to install the Battctl widget
+alone, here's what you would do:
 
     git clone https://github.com/cherrynoize/ctrl
     cd ctrl
