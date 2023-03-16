@@ -172,11 +172,8 @@ when pressing the brightness keys.
 ## Installing separate modules
 
 The single modules are totally independent one from the
-other, but they all rely on the same core.
+other, but they all rely on the same central core.
 
-> The core is comprised of `ui.lua`, `utils.lua` and
-`config.lua`. Widgets need all three of these files to
-work.
 > The only exception would be the Spacer widget.
 
 So, say you wanted to install the Battctl widget alone.
