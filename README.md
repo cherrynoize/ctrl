@@ -1,4 +1,4 @@
->  ____ _        _  
+>  \____ _        _  
 > / ___| |_ _ __| |  
 >| |   | __| '__| | - Simple awesome wm widget library.  
 >| |___| |_| |  | | - https://github.com/cherrynoize/ctrl  
