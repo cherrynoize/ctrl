@@ -79,7 +79,7 @@ hopefully work it out on the spot and there'll be no
 need for a separate documentation. It should be all
 rather self-explanatory.
 
-### Ctrl variable
+### Ctrl path
 
 There is also a `ctrl` variable definition at the top of
 each module.
