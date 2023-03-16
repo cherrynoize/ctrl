@@ -189,6 +189,10 @@ to a minimum weight for the whole project, so it's small,
 tidy and easily rearrangeable. In case you want to try
 and use it to make your own widgets.
 
+
+------------------------------------------------------
+
+
 ## Bugs
 
 The widgets tend to work pretty well all in all for me,
@@ -224,37 +228,35 @@ of well known bugs:
 
 Still works smoother than Spotify desktop though.
 
---------Troubleshooting-------------------------------
-
-
 ## Troubleshooting
 
 ### Misc
 
-1) Remember paths for custom theme and widgets
-   directory are relative to rc.lua.
+> 1) Remember paths for custom theme and widgets
+>    directory are relative to rc.lua.
 
 ### Config
 
-1) If theme properties are not respected check the
-   variables requested from theme in the config file and 
-   update them to match the definitions used in your 
-   actual theme.
+> 1) If theme properties are not respected check the
+>    variables requested from theme in the config file and 
+>    update them to match the definitions used in your 
+>    actual theme.
 
 ### Lightctl
 
-1) Make sure you've set the correct udev permissions.
-
-2) You may want to edit the backlight path variables
-   to best suit your system.
-
-3) Install `light` and set `use_light` to true in 
-   the Lightctl configuration.
+> 1) Make sure you've set the correct udev permissions.
+> 
+> 2) You may want to edit the backlight path variables
+>    to best suit your system.
+> 
+> 3) Install `light` and set `use_light` to true in 
+>    the Lightctl configuration.
 
 ## Contacts
 
-u/cherrynoize
-0xo1m0x5w@mozmail.com
+> u/cherrynoize
+> 
+> 0xo1m0x5w@mozmail.com
 
 Please feel free to contact me about any feedback or
 request.
@@ -263,11 +265,11 @@ request.
 
 If you want to support me:
 
-0x5938C4DA9002F1b3a54fC63aa9E4FB4892DC5aA8 (ETH)
-G77bErQLYatQgMEXHYUqNCxFdUgKuBd8xsAuHjeqvavv (SOL)
-0x0E0eAd7414cFF412f89BcD8a1a2043518fE58f82 (BNB)
-terra1n5sm6twsc26kjyxz7f6t53c9pdaz7eu6zlsdcy (LUNC)
+> 0x5938C4DA9002F1b3a54fC63aa9E4FB4892DC5aA8 (ETH)
+> G77bErQLYatQgMEXHYUqNCxFdUgKuBd8xsAuHjeqvavv (SOL)
+> 0x0E0eAd7414cFF412f89BcD8a1a2043518fE58f82 (BNB)
+> terra1n5sm6twsc26kjyxz7f6t53c9pdaz7eu6zlsdcy (LUNC)
 
 ### Thank you
 
-Thank you for using my software!
+> Thanks for using my software.
