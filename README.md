@@ -230,25 +230,25 @@ Still works smoother than Spotify desktop though.
 
 ### Misc
 
-> 1) Remember paths for custom theme and widgets
->    directory are relative to rc.lua.
+1) Remember paths for custom theme and widgets
+   directory are relative to rc.lua.
 
 ### Config
 
-> 1) If theme properties are not respected check the
->    variables requested from theme in the config file and 
->    update them to match the definitions used in your 
->    actual theme.
+1) If theme properties are not respected check the
+   variables requested from theme in the config file and 
+   update them to match the definitions used in your 
+   actual theme.
 
 ### Lightctl
 
-> 1) Make sure you've set the correct udev permissions.
-> 
-> 2) You may want to edit the backlight path variables
->    to best suit your system.
-> 
-> 3) Install `light` and set `use_light` to true in 
->    the Lightctl configuration.
+1) Make sure you've set the correct udev permissions.
+
+2) You may want to edit the backlight path variables
+   to best suit your system.
+
+3) Install `light` and set `use_light` to true in 
+   the Lightctl configuration.
 
 ## Contacts
 
