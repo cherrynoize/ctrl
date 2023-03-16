@@ -15,8 +15,8 @@ local config = {}
 
 -- Uncomment this line to import your theme and
 -- automatically derive styles for your widgets.
-local theme = require "themes.neo.theme"
---local theme = {} -- Empty array means no theme. 
+--local theme = require "themes.myTheme.theme"
+local theme = {} -- Empty array means no theme. 
 
 -- Widget configuration.
 config.path        = '/sys/class/power_supply/BAT1/' -- Path to battery dir.

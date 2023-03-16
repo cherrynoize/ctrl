@@ -1,14 +1,37 @@
-  ____ _        _
- / ___| |_ _ __| |
-| |   | __| '__| | - Simple awesome wm widget library.
-| |___| |_| |  | | - https://github.com/cherrynoize/ctrl
- \____|\__|_|  |_| - cherry-noize
+      ____ _        _
+     / ___| |_ _ __| |
+    | |   | __| '__| | - Simple awesome wm widget library.
+    | |___| |_| |  | | - https://github.com/cherrynoize/ctrl
+     \____|\__|_|  |_| - cherry-noize
 
 # Ctrl
 
 A minimal widget library for **awesome wm**, providing
 easily customizable tools for handling volume,
 brightness and battery information.
+
+## Features
+
+- support for both text and visual mode
+- `light` support
+- `alsamixer` for audio configuration 
+- portability between Intel and AMD
+- tries to figure it on its own in other scenarios
+- mouse events support (1 to 5 by default)
+- pseudo-bilogarithmic brightness adjustment
+  (tones it down as you get closer to the extremes)
+- modular widget installation
+
+Unfortunately I've had to remove support for progressbar
+with text overlay because some parts were deprecated
+and I was just trying to polish the code and to cleanse
+all in excess.
+
+Now it only has support for text or progressbar mode
+separately, not combined.
+
+I'm definitely planning on reimplementing that in a
+cleaner fashion someday. Don't hold your breath though!
 
 ## Install
 
@@ -39,6 +62,21 @@ you cloned this repo in.
 
 > The path is relative to the `awesome` config dir.
 > (i.e: where `rc.lua` is.)
+
+### Theme
+
+By default you can import your theme in the configuration
+file to automatically derive colorschemes and font
+settings.
+
+If you wanted to configure more options in your theme,
+you can set them for an arbitrary property in the
+configuration file like so:
+
+    config.option = theme.my_option or previous_value
+
+This way the previous value will be mantained as a
+fallback, in case the theme option gets deleted.
 
 ## Usage
 
@@ -93,6 +131,41 @@ And you should be good to go!
 >
 > The relevant section is enclosed in the comments.
 
+### Keybindings
+
+Yes, I lied. If you restart your config you should notice
+that as of now you're just staring at your current
+backlight value and it's not very fun.
+
+So you probably want to set up some keybindings, before
+these tools are any use.
+
+This is a sample config for the `awful` keybindings to
+get you started.
+
+   -- Soundctl.
+   awful.key({}, "XF86AudioRaiseVolume", soundctl.up),
+   awful.key({}, "XF86AudioLowerVolume", soundctl.down),
+   awful.key({}, "XF86AudioMute", soundctl.togglemute),
+   awful.key({modkey, "Control", "Shift"}, "q", soundctl.max),
+   awful.key({modkey, "Control", "Shift"}, "w", soundctl.half),
+   awful.key({modkey, "Control", "Shift"}, "e", soundctl.min),
+   awful.key({modkey, "Control", "Shift"}, "m", soundctl.togglemute),
+
+   -- Lightctl.
+   awful.key({}, "XF86MonBrightnessDown", lightctl.logdown),
+   awful.key({}, "XF86MonBrightnessUp", lightctl.logup),
+   awful.key({modkey}, "XF86MonBrightnessUp", lightctl.all),
+   awful.key({modkey}, "XF86MonBrightnessDown", lightctl.min),
+   awful.key({modkey, "Control", "Shift"}, "a", lightctl.all),
+   awful.key({modkey, "Control", "Shift"}, "s", lightctl.half),
+   awful.key({modkey, "Control", "Shift"}, "d", lightctl.min)
+
+Other functions for lightctl would include for instance
+`up` and `down`, which you could substitute for `logup`
+and `logdown` if you wanted an always linear behaviour
+when pressing the brightness keys. 
+
 ## Installing separate modules
 
 The single modules are totally independent one from the
@@ -116,6 +189,72 @@ you change your mind. I tried to keep the code down to
 a minimum weight for the whole project, so it's small,
 tidy and easily rearrangeable, in case you wanted to
 use it to make your own widgets.
+
+## Bugs
+
+The widgets tend to work pretty well all in all for me,
+but please do open an issue or contact me otherwise if you
+encounter any disturbance whatsoever.
+
+The general functionality is mostly respected and I do
+not have any fatal errors on my configuration:
+
+    $ awesome -v
+    awesome v4.3 (Too long)
+     • Compiled against Lua 5.3.6 (running with Lua 5.3)
+     • D-Bus support: ✔
+     • execinfo support: ✔
+     • xcb-randr version: 1.6
+     • LGI version: 0.9.2
+
+    $ lua -v
+    Lua 5.4.4  Copyright (C) 1994-2022 Lua.org, PUC-Rio
+
+The program is far from perfect though. Aside from the
+features that still need implementation, this is a list
+of well known bugs:
+
+- Brightness pseudolog functions not always working as
+  expected. I did make sure they work for the lowest
+  edge, meaning the lowest brightness end of the
+  spectrum, which was the most relevant use-case for the
+  function anyway. More generally the current behaviour
+  seems to be that it always decreases in small steps
+  while going down (decreasing) and in normal steps
+  *after* the lowest edge.
+
+Still works smoother than the Spotify desktop app.
+
+## Troubleshooting
+
+     ____       _
+    |  _ \  ___| |__  _   _  __ _
+    | | | |/ _ \ '_ \| | | |/ _` |
+    | |_| |  __/ |_) | |_| | (_| |
+    |____/ \___|_.__/ \__,_|\__, |
+       --Troubleshooting--  |___/
+
+### Misc
+
+1) Remember paths for custom theme and widgets
+   directory are relative to rc.lua.
+
+### Config
+
+1) If theme properties are not respected check the
+   variables requested from theme in the config file and 
+   update them to match the definitions used in your 
+   actual theme.
+
+### Lightctl
+
+1) Make sure you've set the correct udev permissions.
+
+2) You may want to edit the backlight path variables
+   to best suit your system.
+
+3) Install `light` and set `use_light` to true in 
+   the Lightctl configuration.
 
 ## Contacts
 
