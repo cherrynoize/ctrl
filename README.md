@@ -13,17 +13,39 @@ A minimal widget library for **awesome wm**, providing
 easily customizable tools for handling volume,
 brightness and battery information.
 
+## Modules
+
+### Battctl
+
+A minimal battery status and notification widget.
+
+### Lightctl
+
+A portable brightness control widget with `light` support. 
+
+Compatible with different system backlight settings
+(Intel and AMD), and tries to figure it out in other
+cases.
+
+Pseudo-bilogarithmic brightness adjustment tones it down
+as you get closer to minimum and maximum values, giving
+you more fine-grained control over extreme cases. 
+
+### Soundctl
+
+An alsamixer volume interface.
+
+### Spacer
+
+A dynamic fully customizable spacing widget.
+
+It's just a separator.
+
 ## Features
 
-- support for both text and visual mode
-- `light` support
-- `alsamixer` for audio configuration 
-- portability between Intel and AMD
-- tries to figure it on its own in other scenarios
-- mouse events support (1 to 5 by default)
-- pseudo-bilogarithmic brightness adjustment
-  (tones it down as you get closer to the extremes)
-- modular widget installation
+- Both text and visual mode
+- Mouse events 1 to 5 implemented by default
+- Modular setup
 
 Unfortunately I've had to remove support for progressbar
 with text overlay because some parts were deprecated
