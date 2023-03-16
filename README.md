@@ -4,7 +4,7 @@
     | |___| |_| |  | | - https://github.com/cherrynoize/ctrl
      \____|\__|_|  |_| - cherry-noize
 
-------------------------------------------------------
+---
 
 
 # Ctrl
@@ -189,9 +189,7 @@ to a minimum weight for the whole project, so it's small,
 tidy and easily rearrangeable. In case you want to try
 and use it to make your own widgets.
 
-
-------------------------------------------------------
-
+---
 
 ## Bugs
 
@@ -264,12 +262,7 @@ request.
 ## Donations
 
 If you wanted to show your support or just buy me a Coke:
-   
-               
-         
-         
-         
-         
+
     ETH   0x5938C4DA9002F1b3a54fC63aa9E4FB4892DC5aA8
 
     SOL   G77bErQLYatQgMEXHYUqNCxFdUgKuBd8xsAuHjeqvavv
