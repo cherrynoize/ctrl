@@ -176,14 +176,14 @@ when pressing the brightness keys.
 >
 > The only exception would be the Spacer widget.
 
-Therefore if you wanted to install the Battctl widget
-alone, here's what you would do:
+Therefore if you didn't want to install the Soundctl and
+Lightctl widgets, here's what you would do:
 
     git clone https://github.com/cherrynoize/ctrl
     cd ctrl
-    rm soundctl.lua lightctl.lua spacer.lua
+    rm soundctl.lua lightctl.lua
 
-Or you could always just keep them sleeping, in case
+But you could easily just keep them lying around, in case
 you change your mind. I tried to keep the code down to
 a minimum weight for the whole project, so it's small,
 tidy and easily rearrangeable, in case you wanted to
