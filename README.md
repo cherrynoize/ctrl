@@ -266,8 +266,11 @@ request.
 If you want to show your support or just buy me a Coke:
 
     ETH   0x5938C4DA9002F1b3a54fC63aa9E4FB4892DC5aA8
+
     SOL   G77bErQLYatQgMEXHYUqNCxFdUgKuBd8xsAuHjeqvavv
+
     BNB   0x0E0eAd7414cFF412f89BcD8a1a2043518fE58f82
+
     LUNC  terra1n5sm6twsc26kjyxz7f6t53c9pdaz7eu6zlsdcy
 
 ### Thank you
