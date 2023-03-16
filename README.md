@@ -1,8 +1,8 @@
 >  \____ _        _  
-> / ___| |_ _ __| |  
->| |   | __| '__| | - Simple awesome wm widget library.  
->| |___| |_| |  | | - https://github.com/cherrynoize/ctrl  
-> \____|\__|_|  |_| - cherry-noize  
+> / \___| |_ _ __| |  
+>| |   | \__| '\__| | - Simple awesome wm widget library.  
+>| |\___| |_| |  | | - https://github.com/cherrynoize/ctrl  
+> \\____|\\\__|_|  |_| - cherry-noize  
 
 # Ctrl
 
