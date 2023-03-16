@@ -263,7 +263,7 @@ request.
 
 ## Donations
 
-If you wanted to show your support or just buy me a Coke:
+If you want to show your support or just buy me a Coke:
 
     ETH   0x5938C4DA9002F1b3a54fC63aa9E4FB4892DC5aA8
 
