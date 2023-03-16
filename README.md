@@ -1,8 +1,8 @@
-      ____ _        _
-     / ___| |_ _ __| |
-    | |   | __| '__| | - Simple awesome wm widget library.
-    | |___| |_| |  | | - https://github.com/cherrynoize/ctrl
-     \____|\__|_|  |_| - cherry-noize
+>  ____ _        _
+> / ___| |_ _ __| |
+>| |   | __| '__| | - Simple awesome wm widget library.
+>| |___| |_| |  | | - https://github.com/cherrynoize/ctrl
+> \____|\__|_|  |_| - cherry-noize
 
 # Ctrl
 
@@ -61,7 +61,7 @@ files in the repo. You need to point it to the path
 you cloned this repo in.
 
 > The path is relative to the `awesome` config dir.
-> (i.e: where `rc.lua` is.)
+> (where `rc.lua` is.)
 
 ### Theme
 
