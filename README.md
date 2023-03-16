@@ -184,19 +184,19 @@ here's what you would do:
     rm soundctl.lua lightctl.lua
 
 Or you could easily just have them lying around, if you
-ever you change your mind. I tried to keep the code down
+ever change your mind. I tried to keep the code down
 to a minimum weight for the whole project, so it's small,
-tidy and easily rearrangeable, in case you want to try
+tidy and easily rearrangeable. In case you want to try
 and use it to make your own widgets.
 
 ## Bugs
 
 The widgets tend to work pretty well all in all for me,
 but please do open an issue or contact me otherwise if you
-encounter any disturbance whatsoever.
+encounter any problem whatsoever.
 
 The general functionality is mostly respected and I do
-not have any fatal errors on my configuration:
+not see errors on my machine:
 
     $ awesome -v
     awesome v4.3 (Too long)
@@ -213,25 +213,18 @@ The program is far from perfect though. Aside from the
 features that still need implementation, this is a list
 of well known bugs:
 
-- Brightness pseudolog functions not always working as
+- Brightness pseudo-log functions not always working as
   expected. I did make sure they work for the lowest
   edge, meaning the lowest brightness end of the
   spectrum, which was the most relevant use-case for the
   function anyway. More generally the current behaviour
   seems to be that it always decreases in small steps
   while going down (decreasing) and in normal steps
-  *after* the lowest edge.
+  going up (increasing) *after* the lowest edge.
 
-Still works smoother than the Spotify desktop app.
+Still works smoother than Spotify desktop though.
 
-     ____       _
-    |  _ \  ___| |__  _   _  __ _
-    | | | |/ _ \ '_ \| | | |/ _` |
-    | |_| |  __/ |_) | |_| | (_| |
-    |____/ \___|_.__/ \__,_|\__, |
-       --Troubleshooting--  |___/
-
-------------------------------------------------------
+--------Troubleshooting-------------------------------
 
 
 ## Troubleshooting
