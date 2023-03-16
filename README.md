@@ -4,8 +4,8 @@
     | |___| |_| |  | | - https://github.com/cherrynoize/ctrl
      \____|\__|_|  |_| - cherry-noize
 
-
 ------------------------------------------------------
+
 
 # Ctrl
 
@@ -235,8 +235,8 @@ Still works smoother than the Spotify desktop app.
     |____/ \___|_.__/ \__,_|\__, |
        --Troubleshooting--  |___/
 
-
 ------------------------------------------------------
+
 
 ## Troubleshooting
 
