@@ -88,7 +88,7 @@ That is used for cross-interaction between different
 files in the repo. You need to point it to the path
 you cloned this repo in.
 
-> The path is relative to the `awesome` (`rc.lua`) config
+> The path is relative to the awesome (`rc.lua`) config
 > path.
 
 ### Theme
