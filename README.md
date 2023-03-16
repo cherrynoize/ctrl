@@ -273,4 +273,4 @@ If you wanted to show your support or just buy me a Coke:
 
 ### Thank you
 
-> Thanks for using my software.
+Thanks for using my software.
