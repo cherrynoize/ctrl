@@ -4,6 +4,7 @@
     | |___| |_| |  | | - https://github.com/cherrynoize/ctrl
      \____|\__|_|  |_| - cherry-noize
 
+
 ------------------------------------------------------
 
 # Ctrl
@@ -227,14 +228,17 @@ of well known bugs:
 
 Still works smoother than the Spotify desktop app.
 
-## Troubleshooting
-
      ____       _
     |  _ \  ___| |__  _   _  __ _
     | | | |/ _ \ '_ \| | | |/ _` |
     | |_| |  __/ |_) | |_| | (_| |
     |____/ \___|_.__/ \__,_|\__, |
        --Troubleshooting--  |___/
+
+
+------------------------------------------------------
+
+## Troubleshooting
 
 ### Misc
 
