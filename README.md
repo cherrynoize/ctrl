@@ -63,8 +63,8 @@ That is used for cross-interaction between different
 files in the repo. You need to point it to the path
 you cloned this repo in.
 
-> The path is relative to the `awesome` config dir.
-> (where `rc.lua` is.)
+> The path is relative to the `awesome` (`rc.lua`) config
+> path.
 
 ### Theme
 
@@ -128,11 +128,11 @@ Then simply add them to your `wibox:setup` like so:
          },
       }
 
-And you should be good to go!
-
 > This is just a sample config.
 >
 > The relevant section is enclosed in the comments.
+
+And you should be good to go!
 
 ### Keybindings
 
