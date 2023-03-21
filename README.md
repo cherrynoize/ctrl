@@ -1,17 +1,10 @@
-      ____ _        _
-     / ___| |_ _ __| |
-    | |   | __| '__| | - Simple awesome wm widget library.
-    | |___| |_| |  | | - https://github.com/cherrynoize/ctrl
-     \____|\__|_|  |_| - cherry-noize
-
----
-
-
 # Ctrl
 
 A minimal widget library for **awesome wm**, providing
 easily customizable tools for handling volume,
 brightness and battery information.
+
+![ctrl screenshot](https://imgur.com/bI3VURO "15 (brightness) | 75% volume | full battery")
 
 ## Modules
 
