@@ -4,7 +4,7 @@ A minimal widget library for **awesome wm**, providing
 easily customizable tools for handling volume,
 brightness and battery information.
 
-![ctrl screenshot](https://imgur.com/bI3VURO "15 (brightness) | 75% volume | full battery")
+![ctrl screenshot](https://i.imgur.com/bI3VURO.png "15 (brightness) | 75% volume | full battery")
 
 ## Modules
 
