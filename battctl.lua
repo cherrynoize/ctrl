@@ -1,7 +1,7 @@
 --[[
  ____        _   _       _    _
 | __ )  __ _| |_| |_ ___| |_ | |
-|  _ \ / _` | __| __/ __| __|| | - Simple battery widget for awesome wm.
+|  _ \ / _` | __| __/ __| __|| | - Simple battery widget for awesome wm
 | |_) | (_| | |_| || (__| |_ | | - https://github.com/cherrynoize/ctrl
 |____/ \__,_|\__|\__\___|\__||_| - cherry-noize
 ]]--
@@ -33,7 +33,7 @@ else
    battery.widget = wibox.widget(ui.text)
 end
 
-battery.widget.layout = wibox.layout.stack
+battery.widget.layout = wibox.layout.align.horizontal
 
 -- Reads battery charge.
 -- Values for when are "now", "full" or "full_design".

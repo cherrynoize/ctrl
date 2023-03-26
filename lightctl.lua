@@ -1,7 +1,7 @@
 --[[
  _     _       _     _       _   _
 | |   (_) __ _| |__ | |_ ___| |_| |
-| |   | |/ _` | '_ \| __/ __| __| | - Simple backlight widget for awesome wm.
+| |   | |/ _` | '_ \| __/ __| __| | - Simple backlight widget for awesome wm
 | |___| | (_| | | | | || (__| |_| | - https://github.com/cherrynoize/ctrl
 |_____|_|\__, |_| |_|\__\___|\__|_| - cherry-noize
          |___/
@@ -49,7 +49,7 @@ else
    brightness.widget = wibox.widget(ui.text)
 end
 
-brightness.widget.layout = wibox.layout.stack
+brightness.widget.layout = wibox.layout.align.horizontal
 
 -- Return current brightness value percentage.
 function brightness.file_perc()

@@ -1,7 +1,7 @@
 --[[
  ____                        _      _    _
 / ___|  ___  _   _ _ __   __| | ___| |_| |
-\___ \ / _ \| | | | '_ \ / _` |/ __| __| | - Simple volume.widget for awesome wm.
+\___ \ / _ \| | | | '_ \ / _` |/ __| __| | - Simple volume.widget for awesome wm
  ___) | (_) | |_| | | | | (_| | (__| |_| | - https://github.com/cherrynoize/ctrl
 |____/ \___/ \__,_|_| |_|\__,_|\___|\__|_| - cherry-noize
 ]]--
@@ -30,7 +30,7 @@ else
    volume.widget = wibox.widget(ui.text)
 end
 
-volume.widget.layout = wibox.layout.stack
+volume.widget.layout = wibox.layout.align.horizontal
 
 -- Strip volume string and return a number value.
 function volume.strip(lvl)

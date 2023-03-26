@@ -1,7 +1,7 @@
 --[[
  ____
 / ___| _ __   __ _  ___ ___ _ __
-\___ \| '_ \ / _` |/ __/ _ \ '__| - Simple separator widget for awesome wm. 
+\___ \| '_ \ / _` |/ __/ _ \ '__| - Simple separator widget for awesome wm
  ___) | |_) | (_| | (_|  __/ |    - https://github.com/cherrynoize/ctrl
 |____/| .__/ \__,_|\___\___|_|    - cherry-noize
       |_|
