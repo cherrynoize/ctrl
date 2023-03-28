@@ -1,7 +1,7 @@
 --[[
   ____ _        _
  / ___| |_ _ __| |
-| |   | __| '__| | - Simple awesome wm widget library.
+| |   | __| '__| | - Simple awesome wm widget library
 | |___| |_| |  | | - https://github.com/cherrynoize/ctrl
  \____|\__|_|  |_| - cherry-noize
 ]]--
@@ -9,14 +9,10 @@
 -- Module imports.
 local wibox = require "wibox"
 local gears = require "gears"
+local beautiful = require "beautiful"
 
 -- Initialize configuration table.
 local config = {}
-
--- Uncomment this line to import your theme and
--- automatically derive styles for your widgets.
---local theme = require "themes.myTheme.theme"
-local theme = {} -- Empty array means no theme. 
 
 -- Widget configuration.
 config.path        = '/sys/class/power_supply/BAT1/' -- Path to battery dir.
@@ -36,7 +32,7 @@ config.step         = 5 -- Progressbar steps.
 config.padding      = {top = 1, bottom = 1,} -- Padding.
 config.margin       = {top = 5, bottom = 5,} -- Margin.
 config.border_width = 1 -- Border thickness.
-config.border_color = theme.fg_normal or '#87abef' -- Border color.
+config.border_color = beautiful.fg_normal or '#87abef' -- Border color.
 config.shape        = gears.shape['powerline'] -- Widget shape.
 config.bar_shape    = gears.shape['rounded_bar'] -- Bar shape.
 -- If you choose a custom widget, you should make sure
@@ -45,16 +41,16 @@ config.widget       = wibox.widget.progressbar -- Bar widget object.
 
 -- Text layout.
 config.align    = 'center'
-config.font     = theme.font or 'Dejavu Sans Mono 10'
+config.font     = beautiful.font or 'Dejavu Sans Mono 10'
 
 -- Widget colors.
-config.fg_color_normal = theme.fg_normal or '#87abef'
-config.fg_color_active = theme.green or '#698f1e'
-config.fg_color_alert  = theme.red or '#cc2050'
+config.fg_color_normal = beautiful.fg_normal or '#87abef'
+config.fg_color_active = beautiful.green or '#698f1e'
+config.fg_color_alert  = beautiful.red or '#cc2050'
 config.fg_color_low    = config.fg_color_discharging
 config.fg_color_crit   = config.fg_color_discharging
-config.bg_color_active = theme.darkgreen or '#05390d'
-config.bg_color_alert  = theme.color_darkred or '#631018'
+config.bg_color_active = beautiful.darkgreen or '#05390d'
+config.bg_color_alert  = beautiful.color_darkred or '#631018'
 config.bg_color_low    = config.bg_color_discharging
 config.bg_color_crit   = config.bg_color_discharging
 

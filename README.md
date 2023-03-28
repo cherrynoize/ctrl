@@ -28,11 +28,19 @@ you more fine-grained control over extreme cases.
 
 An alsamixer volume interface.
 
+### Tray
+
+Minimal tray container. 
+
 ### Spacer
 
 A dynamic fully customizable spacing widget.
 
 It's just a separator.
+
+### Container
+
+Simple configurable container widget.
 
 ## Features
 
@@ -111,11 +119,13 @@ for instance):
     local battctl  = require (ctrl .. "battctl")
     local soundctl = require (ctrl .. "soundctl")
     local lightctl = require (ctrl .. "lightctl")
+    local tray = require (ctrl .. "tray")
     local sep      = require (ctrl .. "spacer")
 
 ### Setup
 
-Then simply add them to your `wibox:setup` like so: 
+Then simply add them to your `wibox:setup` section like
+so: 
 
     -- Setup wibox layout and widgets.
     s.mywibox:setup {
@@ -139,6 +149,7 @@ Then simply add them to your `wibox:setup` like so:
                 lightctl.widget,
                 soundctl.widget,
                 battctl.widget,
+                tray.shelf,
                 -- End of the new widgets!
             },
             mytextclock,
@@ -148,9 +159,13 @@ Then simply add them to your `wibox:setup` like so:
 
 > This is just a sample config.
 >
-> The relevant section is enclosed in the comments.
+> The relevant section is enclosed in comments.
 
-And you should be good to go!
+And you're good to go!
+
+#### Container
+
+Sample setup for the container can be found in `tray.lua`.
 
 ### Keybindings
 
