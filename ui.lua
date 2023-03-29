@@ -1,5 +1,6 @@
 local wibox = require "wibox"
-local config = require (ctrl .. "config")
+-- Import Ctrl modules
+local config = require "ctrl.config"
 
 local ui = {}
 

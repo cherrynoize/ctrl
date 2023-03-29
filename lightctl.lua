@@ -7,35 +7,30 @@
          |___/
 ]]--
 
--- Module imports.
+-- Module imports
 local awful = require("awful")
 local wibox = require("wibox")
+-- Import Ctrl modules
+local utils = require "ctrl.utils"
+local ui = require "ctrl.ui"
+local config = require "ctrl.config"
 
--- Path to the widget or plugin directory where this
--- module is.
-ctrl = "widgets.ctrl."
-
--- Import widget files.
-local utils = require (ctrl .. ".utils")
-local ui = require (ctrl .. ".ui")
-local config = require (ctrl .. ".config")
-
--- Initialize brightness variable.
+-- Initialize brightness variable
 local brightness = {}
 
--- Return path to brightness file. 
+-- Return path to brightness file
 function path_to_file(dir, file) 
    return config.backlight_path .. '/' .. dir .. '/' .. file
 end
 
--- Path to brightness.
+-- Path to brightness
 brightness.file = utils.anyfile(
    path_to_file(config.intel_dir, config.brightness_file), -- Intel.
    path_to_file(config.amd_dir, config.brightness_file), -- AMD.
    path_to_file(utils.scandir(config.backlight_path)[3], config.brightness_file) -- Fallback (brute-read anything from backlight dir).
 )
 
--- Path to max_brightness.
+-- Path to max_brightness
 brightness.max_file = utils.anyfile(
    path_to_file(config.intel_dir, config.max_brightness_file), -- Intel.
    path_to_file(config.amd_dir, config.max_brightness_file), -- AMD.

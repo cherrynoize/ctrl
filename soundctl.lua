@@ -10,15 +10,10 @@
 local awful = require "awful"
 local wibox = require "wibox"
 local spawn_with_shell = awful.util.spawn_with_shell or awful.spawn.with_shell
-
--- Path to the widget or plugin directory where this
--- module is.
-ctrl = "widgets.ctrl."
-
--- Import widget modules.
-local utils = require (ctrl .. ".utils")
-local ui = require (ctrl .. ".ui")
-local config = require (ctrl .. ".config")
+-- Import Ctrl modules
+local utils = require "ctrl.utils"
+local ui = require "ctrl.ui"
+local config = require "ctrl.config"
 
 -- Initialize volume variable.
 local volume = {}

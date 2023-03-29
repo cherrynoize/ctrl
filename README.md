@@ -61,6 +61,7 @@ cleaner fashion someday. Don't hold your breath though!
 
 ## Install
 
+    cd ~/.config/awesome
     git clone https://github.com/cherrynoize/ctrl
 
 ## Configuration
@@ -73,54 +74,54 @@ cleaner fashion someday. Don't hold your breath though!
 > `config.lua.def` into `config.lua` and restart awesome.
 > 
 > Configuration is shared among all modules, though there
-> are sections specific to each.
+> are some sections specific to each.
 
-I tried to keep the file well commented so you can
-hopefully work it out on the spot and there'll be no
+I tried to keep the file thoroughly commented so you can
+hopefully work it out along the way and there'll be no
 need for a separate documentation. It should be all
-rather self-explanatory.
-
-### Ctrl path
-
-There is also a `ctrl` variable definition at the top of
-each module.
-
-That is used for cross-interaction between different
-files in the repo. You need to point it to the path
-you cloned this repo in.
-
-> The path is relative to the awesome (`rc.lua`) config
-> path.
+rather self-explanatory once you look at it.
 
 ### Theme
 
-By default you can import your theme in the configuration
-file to automatically derive colorschemes and font
-settings.
+By default Ctrl tries to read from `beautiful` for a lot of
+configuration values, and automatically falls back if it
+doesn't find anything.
 
-If you wanted to configure more options in your theme,
-you can set them for an arbitrary property in the
+Things like colorschemes and font settings should be imported
+easily, but if you wanted to configure other options in your
+theme, you could then define any arbitrary property in the
 configuration file like so:
 
-    config.option = theme.my_option or previous_value
+    config.option = beautiful.my_option or previous_value
 
 This way the previous value will be mantained as a
 fallback, in case the theme option gets deleted.
+
+> Just make sure Ctrl gets imported after the call to
+`beautiful.init`.
 
 ## Usage
 
 ### Import
 
-After you've set the correct path in the modules you
-want to use, you need to import them (in your `rc.lua`,
-for instance):
+You can import modules like this: 
 
-    local ctrl     = "path/to/ctrl"
-    local battctl  = require (ctrl .. "battctl")
-    local soundctl = require (ctrl .. "soundctl")
-    local lightctl = require (ctrl .. "lightctl")
-    local tray = require (ctrl .. "tray")
-    local sep      = require (ctrl .. "spacer")
+    local ctrl = require "ctrl"
+    local battctl = ctrl.battctl
+    local soundctl = ctrl.soundctl
+    local lightctl = ctrl.lightctl
+    local tray = ctrl.tray
+    local sep = ctrl.spacer
+
+Or like this:
+
+    local battctl = require "ctrl.battctl"
+    local soundctl = require "ctrl.soundctl"
+    local lightctl = require "ctrl.lightctl"
+    local tray = require "ctrl.tray"
+    local sep = require "ctrl.spacer"
+
+They both work the same way.
 
 ### Setup
 

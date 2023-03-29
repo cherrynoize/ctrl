@@ -6,18 +6,13 @@ __        ___            _   _
    \_/\_/  |_|_| |_|\___|\__|_| - cherry-noize
 ]]--
 
--- Module imports.
+-- Module imports
 local awful = require "awful"
 local wibox = require "wibox"
 local gears = require "gears"
-
--- Path to the widget or plugin directory where this
--- module is.
-ctrl = "widgets.ctrl."
-
--- Import widget modules.
-local ui = require (ctrl .. ".ui")
-local config = require (ctrl .. ".config")
+-- Import Ctrl modules
+local ui = require "ctrl.ui"
+local config = require "ctrl.config"
 
 local winctl = {}
 
@@ -28,14 +23,14 @@ function winctl.update()
    winctl.widget:set_markup_silently('<span color="' .. config.fg_color_normal .. '">' .. '+' .. '</span>')
 end
 
--- Mouse click events.
+-- Mouse click events
 winctl.widget:buttons(awful.util.table.join(
       awful.button({ }, 1, function() end), -- Left click
       awful.button({ }, 3, function() end) -- Right click
    )
 )
 
--- Set timer and initialize widget.
+-- Set timer and initialize widget
 winctl.timer = gears.timer {
    timeout   = config.timeout,
    call_now  = true,

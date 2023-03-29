@@ -12,15 +12,10 @@ local naughty = require "naughty"
 local wibox = require "wibox"
 local gears = require "gears"
 local math = require "math"
-
--- Path to the widget or plugin directory where this
--- module is.
-ctrl = "widgets.ctrl."
-
--- Import widget modules.
-local utils = require (ctrl .. ".utils")
-local ui = require (ctrl .. ".ui")
-local config = require (ctrl .. ".config")
+-- Import Ctrl modules
+local utils = require "ctrl.utils"
+local ui = require "ctrl.ui"
+local config = require "ctrl.config"
 
 -- Initialize battery variable.
 local battery = {}

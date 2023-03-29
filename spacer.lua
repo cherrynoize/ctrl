@@ -7,18 +7,13 @@
       |_|
 ]]--
 
--- Module imports.
+-- Module imports
 local awful = require "awful"
 local wibox = require "wibox"
+-- Import Ctrl modules
+local config = require "ctrl.config"
 
--- Path to the widget or plugin directory where this
--- module is.
-ctrl = "widgets.ctrl."
-
--- Import widget modules.
-local config = require (ctrl .. ".config")
-
--- Initialize separator variable and id.
+-- Initialize separator variable and id
 local sep = {}
 sep.id = 1
 
@@ -67,7 +62,7 @@ function sep.update()
 end
 
 if config.dynamic_sep then
-   -- Mouse click events.
+   -- Mouse click events
    sep.arator:buttons(awful.util.table.join(
       awful.button({ }, 1, sep.forward),
       awful.button({ }, 3, sep.back),
@@ -76,7 +71,7 @@ if config.dynamic_sep then
    ))
 end
 
--- Initialize widget.
+-- Initialize widget
 sep.update()
 
 return sep
