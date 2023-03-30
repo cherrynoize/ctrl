@@ -128,8 +128,8 @@ end
 
 -- Mouse click events.
 volume.widget:buttons(awful.util.table.join(
-      awful.button({ }, 1, volume.spawn),
-      awful.button({ }, 3, volume.togglemute),
+      awful.button({ }, 1, volume.togglemute),
+      awful.button({ }, 3, volume.spawn),
       awful.button({ }, 4, volume.down),
       awful.button({ }, 5, volume.up)
    )
