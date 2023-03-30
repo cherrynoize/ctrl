@@ -47,12 +47,12 @@ config.font     = beautiful.font or 'Dejavu Sans Mono 10'
 config.fg_color_normal = beautiful.fg_normal or '#87abef'
 config.fg_color_active = beautiful.green or '#698f1e'
 config.fg_color_alert  = beautiful.red or '#cc2050'
-config.fg_color_low    = config.fg_color_discharging
-config.fg_color_crit   = config.fg_color_discharging
+config.fg_color_low    = config.fg_color_alert
+config.fg_color_crit   = config.fg_color_alert
 config.bg_color_active = beautiful.darkgreen or '#05390d'
 config.bg_color_alert  = beautiful.color_darkred or '#631018'
-config.bg_color_low    = config.bg_color_discharging
-config.bg_color_crit   = config.bg_color_discharging
+config.bg_color_low    = config.bg_color_alert
+config.bg_color_crit   = config.bg_color_alert
 
 -- Battctl config.
 config.charging_prefix    = '**'
@@ -64,7 +64,7 @@ config.full_suffix        = ']'
 config.battery_full       = 98 -- Full level (to accomodate batteries never reaching 100). 
 
 -- Soundctl config.
-config.soundctl_spawn = 'alacritty -e alsamixer' -- Program to spawn on click. 
+config.soundctl_spawn = 'pavucontrol' -- Program to spawn on click. 
 config.soundctl_step  = 5 -- Volume step changes (1..100).
 config.soundctl_uber  = 125 -- Volume uber level. 
 
