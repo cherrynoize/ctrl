@@ -117,12 +117,7 @@ function volume.overmax()
 end
 
 function volume.togglemute()
-   if volume.is_mute() then
-      os.execute("amixer sset Master unmute")
-   else
-      os.execute("amixer sset Master mute")
-   end
-
+   os.execute("amixer sset Master togglemute")
    volume.update()
 end
 
