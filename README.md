@@ -14,7 +14,8 @@ A minimal battery status and notification widget.
 
 ### Lightctl
 
-A portable brightness control widget with `light` support. 
+A portable backlight control widget with support for different
+managers.
 
 Compatible with different system backlight settings
 (Intel and AMD), and tries to figure it out in other
@@ -80,6 +81,16 @@ I tried to keep the file thoroughly commented so you can
 hopefully work it out along the way and there'll be no
 need for a separate documentation. It should be all
 rather self-explanatory once you look at it.
+
+#### Lightctl
+
+Since `light` has become abandoned I developed my own
+replacement and expanded the module to support it. It's a simple
+shell script and it's completely optional. It also supports a
+minimum (as well as maximum) threshold and both relative and
+absolute brightness values.
+
+You can get it from [here](https://github.com/cherrynoize/set-light).
 
 ### Theme
 
@@ -281,8 +292,8 @@ Still works smoother than Spotify desktop though.
 2) You may want to edit the backlight path variables
    to best suit your system.
 
-3) Install `light` and set `use_light` to true in 
-   the Lightctl configuration.
+3) Install `light` or setup `set-light` and set `blightmgr` to
+   either `light` or `set-light` respectively in the config file.
 
 ## Contacts
 

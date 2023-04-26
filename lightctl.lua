@@ -94,7 +94,9 @@ function brightness.update()
 end
 
 function brightness.up()
-   if config.use_light then
+   if config.blightmgr == "set-light" then
+      utils.capture('set-light -ru ' .. brightness.step)
+   elseif config.blightmgr == "light" then
       utils.capture('light -rA ' .. brightness.step)
    else
       utils.write(brightness.file, brightness.current() + brightness.step)
@@ -103,7 +105,9 @@ function brightness.up()
 end
 
 function brightness.down()
-   if config.use_light then
+   if config.blightmgr == "set-light" then
+      utils.capture('set-light -rd ' .. brightness.step)
+   elseif config.blightmgr == "light" then
       utils.capture('light -rU ' .. brightness.step)
    else
       utils.write(brightness.file, brightness.current() - brightness.step)
@@ -112,7 +116,9 @@ function brightness.down()
 end
 
 function brightness.halfup()
-   if config.use_light then
+   if config.blightmgr == "set-light" then
+      utils.capture('set-light -ru ' .. brightness.step/2)
+   elseif config.blightmgr == "light" then
       utils.capture('light -rA ' .. brightness.step/2)
    else
       utils.write(brightness.file, brightness.current() + brightness.step)
@@ -121,7 +127,9 @@ function brightness.halfup()
 end
 
 function brightness.halfdown()
-   if config.use_light then
+   if config.blightmgr == "set-light" then
+      utils.capture('set-light -rd ' .. brightness.step/2)
+   elseif config.blightmgr == "light" then
       utils.capture('light -rU ' .. brightness.step/2)
    else
       utils.write(brightness.file, brightness.current() - brightness.step)
@@ -171,7 +179,9 @@ function brightness.logdown()
 end
 
 function brightness.min()
-   if config.use_light then
+   if config.blightmgr == "set-light" then
+      utils.capture('set-light -a ' .. 0)
+   elseif config.blightmgr == "light" then
       utils.capture('light -rS ' .. 0)
    else
       utils.write(brightness.file, 0)
@@ -180,7 +190,9 @@ function brightness.min()
 end
 
 function brightness.all()
-   if config.use_light then
+   if config.blightmgr == "set-light" then
+      utils.capture('set-light -a ' .. brightness.max_value)
+   elseif config.blightmgr == "light" then
       utils.capture('light -rS ' .. brightness.max_value)
    else
       utils.write(brightness.file, brightness.max_value)
@@ -189,7 +201,9 @@ function brightness.all()
 end
 
 function brightness.half()
-   if config.use_light then
+   if config.blightmgr == "set-light" then
+      utils.capture('set-light -a ' .. brightness.mav_value/2)
+   elseif config.blightmgr == "light" then
       utils.capture('light -rS ' .. brightness.max_value/2)
    else
       utils.write(brightness.file, brightness.max_value/2)
